@@ -1,0 +1,80 @@
+<!-- Documentation is available at http://www.sublimetext.com/docs/projects -->
+<project>
+	<mount dir="." exclude="*.png,*.jpg,*.exe,*.dll,*.obj,*.pyc" direxclude=".svn,.git,.hg,CVS,bin"/>
+	<options>
+<![CDATA[
+buildFile Packages/C++/Make.sublime-build
+]]>
+	</options>
+</project>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newhotel</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="slider">
+<div class="load">
+</div>
+<header>
+<nav>
+<div class="c clearfix">
+<img src="Images/logo.png" class="logo">
+<ul class="main">
+
+<li><a href="home.html">HOME</a></li>
+<li><a href="registration.html">REGISTER</a></li>
+<li><a href="room.html">ROOMS</a></li>
+<li><a href="food.html">CUISINES</a></li>
+<li><a href="abotu.html">ABOUT US</a></li>
+
+</ul>
+<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+</div>
+</nav>
+<div class="maincontent">
+<h1>GET YOURSELF REGISTERED</h1>
+   <div class="check_avability">
+            <table>
+                <tr>
+                    <td id="td"><input type="date" id="td1" placeholder="check in date"></td>
+                     <td id="td"><input type="date" id="td1" placeholder="check out date"></td>
+                    <td id="td"><select id="td1">
+                                <option>1 Adult</option>
+                                <option>2 Adult</option>
+                                <option>3 Adults</option>
+                        </select></td>
+                    <td id="td"><select id="td1">
+                                <option>1 children</option>
+                                <option>2 children</option>
+                        </select></td>
+                    <td id="td"><select id="td1">
+                                <option>Deluxe Room</option>
+                                <option>Premier Room</option>
+                                <option>Exective Room</option>
+                        </select></td>
+                    <td id="td">
+                        <div id="search_button" onclick="window.open('room.html')"><font style="marging-top:4px;">CHECK AVAILABILITY</font></div>
+                    </td>
+                </tr>
+            </table>
+</div>
+ </div>
+</div>
+ </header>
+<script type="text/javascript">
+function slideshow(){
+    var x= document.getElementsById('check-class');
+    if(x.style.display==="none"){
+        x.style.display="block";
+    }else{
+        x.style.display="none";
+    }
+}
+</script>
+</body>
+</html>
+

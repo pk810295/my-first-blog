@@ -1,0 +1,66 @@
+<!-- Documentation is available at http://www.sublimetext.com/docs/projects -->
+<project>
+	<mount dir="." exclude="*.png,*.jpg,*.exe,*.dll,*.obj,*.pyc" direxclude=".svn,.git,.hg,CVS,bin"/>
+	<options>
+<![CDATA[
+buildFile Packages/C++/Make.sublime-build
+]]>
+	</options>
+</project>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newhotel</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="slider">
+<div class="load">
+</div>
+<header>
+<nav>
+<div class="c clearfix">
+<img src="C:\Users\Nikhil Singh\Documents\newhotelmanagment\Images/logo.png" class="logo">
+<ul class="main" id="check-class">
+
+<li><a href="home.html">HOME</a></li>
+<li><a href="registration.html">REGISTER</a></li>
+<li><a href="room.html">ROOMS</a></li>
+<li><a href="food.html">CUISINES</a></li>
+<li><a href="about.html">ABOUT US</a></li>
+</ul>
+<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+</div>
+</nav>
+<div class="simple-form">
+<div class="maincontent">
+<form id="registration">
+<input type="text" name="fname" id="button" required placeholder="Enter first name" pattern="[a-zA-Z]{1,}" title="Please enter more than 1 letter"><br>
+<br>
+<input type="text" name="lname" id="button" required placeholder="Enter last name"><br><br>
+<input type="email" name="email" id="button" required placeholder="Enter email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter a valid email addredd"><br><br>
+<input type="password" name="pass" id="button" required placeholder="Enter password"><br><br>
+<select id="ph"><option>+91</option><option>+92</option><option>+93</option></select>
+<input type="number" name="none"  required placeholder="Enter mobile number" pattern="[0-9]{4} [0-9{3] [0-9]{3}" title="Please enter a valid number" id="phone"><br><br>
+<input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">MALE</span>
+&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">FEMALE</span><br><br>
+<input type="submit" value="REGISTER" id="but1">
+</form>
+</div>
+</div>
+</header>
+</div>
+<script type="text/javascript">
+function slideshow(){
+	var x= document.getElementsById('check-class');
+	if(x.style.display==="none"){
+		x.style.display="block";
+	}else{
+		x.style.display="none";
+	}
+}
+</script>
+</body>
+</html>
